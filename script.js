@@ -9,6 +9,9 @@ var specialChar = ["!", "@", "#", "$", "%", "^","&", "*", "(", ")", "-", "_", "=
 
 function criteria() {
   var length = parseInt(window.prompt("Enter your desired password length?"));
+    if (length < 8 || length > 128) {
+      window.prompt("Password must be bewteen 8 and 128 characters long. Please try again.")
+    }
 
   var upperCaseLetters = window.confirm("Do you want to include capital letters?");
 
