@@ -9,7 +9,7 @@ function passwordLength() {
   //Ask how many characters the user wants
   var length = parseInt(prompt("Passwords must be between 8 and 128 characters. How many characters would you like?"));
   //Check to make sure user met required length and ask again if requirement is not met
-  while (length < 8 || length > 128 || length === "" || length === null) {
+  while (length < 8 || length > 128 || length == !"" || length === null || undefined) {
     length = parseInt(prompt("Please reenter desired password length"))
   }
 };
